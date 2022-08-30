@@ -1,3 +1,4 @@
+## Section2 Variables
 ### Introduccion de variables y tipos de datos
 nombre de variable es importante para que el compilador pueda rescatar los getters ("sacar info") y los setters ("poner info")
 fruta -> datos relacionados a la fruta
@@ -122,4 +123,44 @@ el operador typeof devuelve una cadena que describe que tipo de dato es el que s
 ### Operador Exponenciacion
 ```
 (**) = Math.pow()
+```
+
+## Section3 Condiciones
+
+### Sentencias Condicionales
+```
+if(condicion){
+    true
+}
+```
+
+### Sentencias else
+cumple con la condicion false;
+
+### Condicionales Operadores Logicos
+```
+if(condicion && condicion2){
+
+}else{
+
+}
+```
+Metodologia kiss -> mantener las cosas sencillas
+
+### Switch // estructura condicional
+
+solo si tenes una sola variable y evaluar los posibles resultados //preguntar una sola variable
+```
+switch(condicion ó variable){
+    case nombrecase:
+        condicion
+        break;
+    case nombrevase2
+        condicion
+        break;
+    default:
+         condicion
+        break;
+       
+}
 ```
