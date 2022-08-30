@@ -112,12 +112,14 @@ codigo claro es el objetivo
 ### Operadores de bits
 cada operador bit a bit, trata a sus operadores como un conjunto de 32 bits (numeros entre ceros y unos que llegan a 32 "lugares") en lugar de valores hexadecimales o decimales 
 
+```
 & valor1 & valor2
 || valor1 || valor2
-
-
+```
 ### Operador typeof
 el operador typeof devuelve una cadena que describe que tipo de dato es el que se consulta, y nos puede devovler una variable, cadena o metodo
 
 ### Operador Exponenciacion
+```
 (**) = Math.pow()
+```
