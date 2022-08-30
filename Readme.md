@@ -101,8 +101,11 @@ comparar dos valores
 
 Nos permiten hacer mas de una pregunta a la vez, que devuelve un verdadero o falso
 
-## Operadores Unarios o atajos
 
+&& 
+||
+
+## Operadores Unarios o atajos
 forma de escribir mas facilmente
 
 a= a+ 10; -> a+=10;
@@ -110,4 +113,24 @@ a = a+1; -> a++;
 a = a-1 -> a--;
 
 
+## Palabras reservadas
 
+Hay palabras reservadas que no hay que usar en una funcion o en variables sino te da un error de sintaxis
+
+## Manejo de espacios en blanco
+los espacios pueden dar legibilidad pero pueden afectar a la performance. se recomienda no usar tantos espacios en blanco y sino usar una compression ej: jscompress.com
+codigo claro es el objetivo
+
+## Operadores de bits
+cada operador bit a bit, trata a sus operadores como un conjunto de 32 bits (numeros entre ceros y unos que llegan a 32 "lugares") en lugar de valores hexadecimales o decimales 
+
+& valor1 & valor2
+|| valor1 || valor2
+
+
+## Operador typeof
+el operador typeof devuelve una cadena que describe que tipo de dato es el que se consulta, y nos puede devovler una variable, cadena o metodo
+
+## Operador Exponenciacion
+
+(**) = Math.pow()

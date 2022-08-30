@@ -73,3 +73,43 @@ a++;
 console.log(a);
 a--;
 console.log(a);
+
+/* Operadores bits */
+
+var a=5; // -> valor decimal: 32 bits
+var b=6;
+console.log(a&b);
+console.log(a|b);
+
+/*******
+ * 
+ * 
+ * Typeof
+ * 
+ * 
+ */
+
+let cadena="soy una cadena";
+let edad =40;
+let date = new Date();
+let nombres = new Array();
+let active = true;
+
+document.write("cadena: "+typeof(cadena) +'<br>');
+document.write("edad: "+typeof(edad) +'<br>');
+document.write("fecha: "+typeof(date) +'<br>');
+document.write("nombres: "+typeof(nombres) +'<br>');
+document.write("active: "+typeof(active)+'<br>');
+
+/*******
+ * 
+ * 
+ * Operador de Exponenciacion
+ * 
+ * 
+ */
+
+var expo=6;
+document.write("exponencial ",expo**2 , '<br>');
+expo **=3;
+document.write("exponencial al tercero" + expo + '<br>');
