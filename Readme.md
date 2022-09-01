@@ -164,3 +164,19 @@ switch(condicion ó variable){
        
 }
 ```
+
+### sentencia break
+
+la sentencia break rompe la estructura switch y sigue con el siguiente. 
+
+### operador condicional -> operacion ternaria
+
+```
+(opcion) ? verdadero : falso;
+
+```
+
+cuando tenemos una sola instruccion )que lo podemos usar sin llaves
+```
+if(condicion) verdadero
+```

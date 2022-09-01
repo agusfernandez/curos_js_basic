@@ -90,4 +90,42 @@ switch(estadoCivil){
         break;
 }
 
-document.write(mensaje + mensaje2 + mensaje3);
+document.write(mensaje + mensaje2 + mensaje3 + '<br>');
+
+
+var estadoCivil2=prompt('¿Cual es tu estado civil?');
+var mensajebienvenida= "holis ";
+var mensajepp="";
+var mensajesec=" fin del comunicado ";
+
+switch(estadoCivil2){
+    case "soltero":
+    case "soltera":
+        mensajepp= "me la doy en la pera ";
+        break;
+    case "casado":
+    case "casada":
+    case "juntado":
+    case "juntada":
+        mensajepp= "andale guacho ";
+        break;
+    default:
+        mensajepp= "disfrute la life";
+        break;
+}
+
+document.write(mensajebienvenida + mensajepp + mensajesec + "<br>");
+
+/******
+ * 
+ * 
+ * Operador ternario
+ * 
+ * 
+*/
+
+let importe = 1000;
+let tipoDeCambio = 200;
+let total = (tipoDeCambio>0)?importe*tipoDeCambio: importe;
+let mensaje4= (tipoDeCambio>0)? " tipo de cambio " + tipoDeCambio: "";
+document.write("el total del pedido es de " + total + mensaje4);
