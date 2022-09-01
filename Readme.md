@@ -126,7 +126,6 @@ el operador typeof devuelve una cadena que describe que tipo de dato es el que s
 ```
 
 ## Section3 Condiciones
-
 ### Sentencias Condicionales
 ```
 if(condicion){
@@ -180,3 +179,32 @@ cuando tenemos una sola instruccion )que lo podemos usar sin llaves
 ```
 if(condicion) verdadero
 ```
+
+## Seccion 4 - Bucles
+
+### Bucles o Ciclos
+while -> primero se pregunta y luego ejecuta + iteracion // lo usamos cuando no sabemos el numero de iteraciones 
+
+```
+while (condicion){
+
+}
+```
+
+do-while ->  se ejecuta la iteracion y se pregunta
+
+```
+do{
+
+}while()
+
+```
+
+for -> sabemos la iteracion
+
+```
+for(var i=0; i<length; i++)
+
+```
+
+ciclos break and continue -> podemos utilizar el break para corta el ciclo y continue para repetirlo sin ejecutar las instrucciones inferiores // continue -> se repite la interacion y no corta // funciona mejor en ua condicion  
