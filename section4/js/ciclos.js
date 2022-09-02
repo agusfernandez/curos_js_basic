@@ -51,7 +51,7 @@ if(clave == "007"){
 for(var ini = 0; ini<10 ; ini++){
     document.write(ini + "<br>");
 }
-document.write('valor final es '+ ini)
+document.write('valor final es '+ ini + '<br>');
 
 
 /*****
@@ -61,3 +61,34 @@ document.write('valor final es '+ ini)
  * 
  * 
  */
+
+// continue
+
+for(var index=0; index<=10;index++){
+    if(index%2==1){
+        continue;
+        // cada vez q sea impar se va a regresar y solo imprimira los pares
+    }
+    document.write("el valor de i es " + index + '<br>');
+}
+
+//break
+
+let numero = 0;
+let magico = 7;
+let pruebas=0;
+
+while(numero!=magico){
+    numero = prompt("Adivina el numero magico entre el 0 al 10");
+    if(numero == magico){
+        // si acierta joya
+        alert("El " + magico + " es el numero magico");
+        break;
+    }
+    pruebas ++;
+    if(pruebas ==3){
+        alert("El numero de intentos ha llegado a su fin");
+        break;
+    }
+    
+}
