@@ -180,7 +180,7 @@ cuando tenemos una sola instruccion )que lo podemos usar sin llaves
 if(condicion) verdadero
 ```
 
-## Seccion 4 - Bucles
+## Seccion4 Bucles
 
 ### Bucles o Ciclos
 while -> primero se pregunta y luego ejecuta + iteracion // lo usamos cuando no sabemos el numero de iteraciones 
@@ -208,3 +208,23 @@ for(var i=0; i<length; i++)
 ```
 
 ciclos break and continue -> podemos utilizar el break para corta el ciclo y continue para repetirlo sin ejecutar las instrucciones inferiores // continue -> se repite la interacion y no corta // funciona mejor en ua condicion  
+
+## Section5 Functions
+
+### funciones
+nos permite dividir el codigo en tramas y nos permite duplicar codigo cuando lo podemos llamar.
+
+### parametros en las funciones
+```
+let mensaje = "hola";
+function peput(mensaje){
+ console.log(mensaje);
+}
+peput();
+
+```
+
+### valor return
+
+el return solo devuelve un solo valor que ocupa donde se esta llamando la funcion
+function-> portabilidad
