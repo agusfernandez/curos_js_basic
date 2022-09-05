@@ -228,3 +228,15 @@ peput();
 
 el return solo devuelve un solo valor que ocupa donde se esta llamando la funcion
 function-> portabilidad
+
+### scope de variables // funciones variables
+usar el var dentro de una funcion > variable  local
+cuando se define fuera de una funcion y puede ser vista por cualqueir funcion> variable global. No modificar las variables globales, dentro de una funcion ya que afecta a la modularidad
+Diseño de cajas negras -> basura entra, basura sale
+
+nunca hay que modificar una variable global desde una funcion
+
+### funciones recursivas
+la recursividad es una funcion que se puede llamar asi misma + importante agregar un condicional dentro de esa recursiva porque sino se puede ciclar
+
+
