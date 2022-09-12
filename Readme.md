@@ -252,5 +252,36 @@ arguments.length
 se validan los parametros de los variables como undifinied a traves de una validacion
 // diferentes formas de validacion de un valor
 
+### Funciones anonimas > fat arrow
+simplificar la funcion
+```
+var y = a => a;
+console.log(y("Chau"));
+```
+
+sin parametros
+```
+var c = () => "hola cara de bola";
+console.log(c());
+
+setTimeout(()=>alert("buenardas", 1000));
+
+```
+
+### valores de argumentos
+```
+function multiplicar(a,b=1){
+    return a*b;
+}
+console.log(5);
 
 
+function cambiarColor(elemento, color="yellow"){
+    elemento.style.backgrounColor=color;
+}
+
+cambiarColor(algun div);
+
+```
+
+### function reversa

@@ -162,3 +162,93 @@ function despuesDeEcma2015(a, b =1){
 
 console.log("despues del ecma " +despuesDeEcma2015(8)); // no me da undefined por la validacion
 console.log("despues del ecma " +despuesDeEcma2015(10, 5));
+
+
+// antes
+var x= function(a){
+ return a;
+}
+console.log(x("hola"));
+
+//arrow function ( si hjay u solo parametro no hace falta parentesis)
+var y = a => a;
+console.log(y("Chau"));
+var z= (a,b) => a + " " + b;
+console.log(z("hola", "pepito"));
+
+//sin parametros
+var c = () => "hola cara de bola";
+console.log(c());
+
+//llamar funcion desde otra funcion
+
+setTimeout(()=>alert("buenardas", 6000));
+
+var ejemplo= ()=>{
+    a="hola";
+    b="cara de bola";
+    alert(a+" "+b);
+}
+ejemplo();
+
+/*******
+ * 
+ *  valores por default
+ * 
+ */
+
+function multiplicar(a,b=1){
+    return a*b;
+}
+console.log(5);
+
+function f(x,y=7,z=42){
+    return x+y+z;
+}
+
+console.log(f(1)); // me da 50
+
+function cambiarColor(elemento, color="yellow"){
+    var cuadro =document.getElementById(elemento);
+    cuadro.style.backgroundColor=color;
+}
+
+window.onload= function(){
+    //cambiarColor("cuadro");
+    cambiarColor("cuadro", "blue");
+}
+
+function agregar (valor, array=[]){
+    array.push(valor);
+    return array;
+}
+console.log(agregar(2));
+console.log(agregar(7));
+
+function j(x=1, y){
+    return [x,y];
+}
+console.log("j: " +j());
+
+
+/**
+ * 
+ * 
+ *  Function reversa
+ *  
+ * 
+ * 
+ * 
+ * */
+
+function reversa(str){
+    if(str.length ==1) return str;
+    return reversa(str.slice(1))+ str[0];
+}
+
+window.onload = function(){
+    document.getElementById("revertir").addEventListener("click", function(){
+        var cadena=document.getElementById("frase-input").value;
+        document.getElementById("frase-reversa").value=reversa(cadena);
+    }, false);
+}
