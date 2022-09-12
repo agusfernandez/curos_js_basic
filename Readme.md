@@ -225,7 +225,6 @@ peput();
 ```
 
 ### valor return
-
 el return solo devuelve un solo valor que ocupa donde se esta llamando la funcion
 function-> portabilidad
 
@@ -233,10 +232,25 @@ function-> portabilidad
 usar el var dentro de una funcion > variable  local
 cuando se define fuera de una funcion y puede ser vista por cualqueir funcion> variable global. No modificar las variables globales, dentro de una funcion ya que afecta a la modularidad
 Diseño de cajas negras -> basura entra, basura sale
-
-nunca hay que modificar una variable global desde una funcion
+----nunca hay que modificar una variable global desde una funcion----
 
 ### funciones recursivas
 la recursividad es una funcion que se puede llamar asi misma + importante agregar un condicional dentro de esa recursiva porque sino se puede ciclar
+
+### funciones anidadas
+es una funcion dentro de otra funcion
+funcion contenedora
+funcion interna -> accededidas en la funcion contenedora /scope + acceder a los recursos / parametros de la funcion contenedora
+
+### objeto arguments
+podemos pasar una gran cantidad de argumentos en nuestra funcion
+```
+arguments[i]
+arguments.length
+```
+### parametros por default ECMA2016
+se validan los parametros de los variables como undifinied a traves de una validacion
+// diferentes formas de validacion de un valor
+
 
 
