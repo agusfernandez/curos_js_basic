@@ -284,4 +284,26 @@ cambiarColor(algun div);
 
 ```
 
-### function reversa
+## Section6 Concatenacion
+
+### Cadenas
+
+- conversion -> es cambiar el tipo de dato de una variable
+- concatenacion -> union (+) de cadenas y numeros
+- NaN / not a number
+- isNaN() ->funcion q determina el valor si es numerico o no e intenta convertilos  a numero
+- Number() -> convierte una cadena(string) en un numero
+
+```
+if(isNaN(total)){
+    console.log("no es un numero");
+}else{
+    console.log("es un numero");
+}
+```
+
+### convertir las cadenas a mayusculas y minusculas
+
+- length->te indica la cantidad de variables // es una propiedad no un metodo
+- toLowerCase();->se pueden hacer comparaciones mas alla de convertirlos en mnusculas o mayusculas
+- toUpperCase();
