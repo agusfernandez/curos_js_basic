@@ -46,8 +46,12 @@ if(isNaN(total)){
 
 // tranformamos todo a lowercase para q entre en eñ true
 
-var email = "agustina@gmail.com";
-var email2= "Agustina@gmail.com";
+var email = "agustinadsdsadasdsadasdasgmail.com";
+var email2= "agustinadsdsadasdsadasd@asgmail.com";
+var posicion = email2.indexOf("@");
+console.log("posicion "+posicion);
+var punto =email2.indexOf(".", posicion+1);
+console.log("punto "+punto);
 
 if(email== email2){
     console.log("Los mails coinciden");
@@ -77,4 +81,26 @@ if (email.length<=20){
     }else{
         console.log("los emails no coinciden");
     }
+}
+
+/*****
+ * 
+ * indexOf() -> validacion de un email
+ * 
+ */
+
+ if (email.length<20){
+    console.log("esta bn de largo0000");
+    } else if(posicion == -1){
+    console.log("el correo no tiene @");
+    }
+    else if(punto == -1){
+        console.log("el correo debe tener un punto");
+
+    }
+    else if(!email.toLowerCase() == email2.toLowerCase()){
+        console.log("los emails no coinciden aqui");
+    }else{
+        console.log("Los mails coinciden aqui");
+
 }

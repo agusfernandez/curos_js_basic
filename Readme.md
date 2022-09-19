@@ -307,3 +307,8 @@ if(isNaN(total)){
 - length->te indica la cantidad de variables // es una propiedad no un metodo
 - toLowerCase();->se pueden hacer comparaciones mas alla de convertirlos en mnusculas o mayusculas
 - toUpperCase();
+- indexOf(); -> buscar una subcadena en una cadena // inicializa en 0 // si devielve 0 no quiere decir q no lo encontro sino q esta en el primer caracter pero si no lo encuentra entonces daria un -1 // sensible con mayusculas y minusculas + le podemos indicar desde donde arranque
+
+```
+cadena.indexOf(valorBusqueda[, indiceDesde]);
+```
