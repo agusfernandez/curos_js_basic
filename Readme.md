@@ -312,3 +312,9 @@ if(isNaN(total)){
 ```
 cadena.indexOf(valorBusqueda[, indiceDesde]);
 ```
+- slice() -> devuelve una copia exacta del array
+- substr() -> divide un array en un punto determinado // 0 es el punto inicial
+```
+email.subtr(0,posicion); 
+```
+-charAt(); -> regresa un caracter(i) // permite validar en un correo q no tenga caracteres raros + los valores que no son aptos para un correo
