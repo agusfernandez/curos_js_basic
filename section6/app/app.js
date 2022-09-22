@@ -175,3 +175,42 @@ if (email.length<20){
         console.log("Los mails coinciden aqui");
 }
 
+
+
+/****
+ * 
+ * padStart();
+ * padEnd();
+ * 
+ *
+ * 
+ ***/
+
+let x="5";
+var str="buenas";
+document.write("lista de ceros al inicio " , x.padStart(5,"0"), "<br>");
+document.write("lista de ceros al inicio " , x.padEnd(5,"0"), "<br>");
+document.write("al pp va " , str.padStart(15,"."), "<br>");
+document.write("al final va " , str.padEnd(15,"."), "<br>");
+console.log(str.length);
+
+
+/******
+ * 
+ * replace();
+ * 
+ *****/
+
+var cadena="hola mis amigos, ¿como estan? espero q estamos BIEN";
+var nuevaCadena= cadena.replace("amigos", "compañeros");
+var cadena2=cadena.replace("bien", "joya"); // no distingue de las mayusculas
+var cadena3=cadena.replace(/bien/i, "joya"); // expresion regular permite el remplazo /dsd/i
+var cadena4= "hola mis amigos, ¿como estan? nos estamos yendo a la playa,  y la vamos a pasar bien en la playa";
+var cadena5= cadena4.replace("playa", "campo"); // se reemplaza en la primera playa
+var cadena6= cadena4.replace(/playa/g, "campo"); // se reemplaza en todas las palabras "playa"
+
+document.write(nuevaCadena, '<br>');
+document.write(cadena2, '<br>'); 
+document.write(cadena3, '<br>'); 
+document.write(cadena5, '<br>'); 
+document.write(cadena6, '<br>'); 

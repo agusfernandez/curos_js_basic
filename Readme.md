@@ -304,7 +304,7 @@ if(isNaN(total)){
 
 ### convertir las cadenas a mayusculas y minusculas
 
-- length->te indica la cantidad de variables // es una propiedad no un metodo
+- length->te indica la cantidad de variables // es una propiedad ...no un metodo
 - toLowerCase();->se pueden hacer comparaciones mas alla de convertirlos en mnusculas o mayusculas
 - toUpperCase();
 - indexOf(); -> buscar una subcadena en una cadena // inicializa en 0 // si devielve 0 no quiere decir q no lo encontro sino q esta en el primer caracter pero si no lo encuentra entonces daria un -1 // sensible con mayusculas y minusculas + le podemos indicar desde donde arranque
@@ -317,4 +317,18 @@ cadena.indexOf(valorBusqueda[, indiceDesde]);
 ```
 email.subtr(0,posicion); 
 ```
--charAt(); -> regresa un caracter(i) // permite validar en un correo q no tenga caracteres raros + los valores que no son aptos para un correo
+- charAt(); -> regresa un caracter(i) // permite validar en un correo q no tenga caracteres raros + los valores que no son aptos para un correo
+- padStart(); -> cuidado con la compatibilidad (navegadores modernos)-> relleba al pp de un array
+- padEnd(); -> rellena al final de un array
+```
+var x= "5";
+x.padStart(5,"0"); // el priemero es la cantidad de caracteres en total / el segundo es con que lo rellenas
+x.padEnd(5,"0");
+```
+- replace() -> genera una nueva cadena / no modifica la que estamos remplazando (la original)+ cuidado con las mayusculas y minusculas
+```
+var cadena="hola mis amigos, ¿como estan? espero q estamos bien";
+var nuevaCadena= cadena.replace("amigos", "compañeros");
+var cadena3=cadena.replace(/bien/i, "joya"); -> bandera i // si hayy mayusculas o minsculas
+var cadena6= cadena4.replace(/playa/g, "campo"); -> bandera g // reemplazar mas de una ocurrencia
+```
