@@ -214,3 +214,63 @@ document.write(cadena2, '<br>');
 document.write(cadena3, '<br>'); 
 document.write(cadena5, '<br>'); 
 document.write(cadena6, '<br>'); 
+
+/******
+ * 
+ * trim() / concat() / split()
+ * 
+ *****/
+
+var ciudad="        Ciudad Autonoma de Buenos Aires";
+console.log("la longitud es " , ciudad.length);
+ciudad= ciudad.trim();
+console.log("la longitud trim es", ciudad.length)
+
+var name = "Agustina";
+var surname = "Fernandez";
+var nombreCompleto= name.concat(surname);
+console.log("nombre completo: " , nombreCompleto);
+var nombreCompletoalreves = surname.concat(name);
+console.log("apellido + nombre: " , nombreCompletoalreves);
+
+var nombres2 = "Hugo, Pepito, Nora, Mano";
+var arrayNombres = nombres2.split(",");
+console.log(arrayNombres);
+for (let index = 0; index < arrayNombres.length; index++) {
+    document.write(arrayNombres[index], "<br>");
+}
+document.write("<hr>");
+//uso de cookies se puede agregar asteriscos
+var nombres3 = "Marian*Pepito*Nora*Mano";
+var arrayNombres = nombres3.split("*");
+console.log(arrayNombres);
+for (let index = 0; index < arrayNombres.length; index++) {
+    document.write(arrayNombres[index], "<br>");
+}
+
+document.write("<hr>");
+
+/******
+ * 
+ *  Backsticks
+ * 
+ *****/
+
+let phrase= `Esto es una linda frase `;
+document.write(phrase);
+let phrase2=`que me 'gusta' mucho y me gustaria "mejorarla"`;
+document.write(phrase2);
+document.write("<hr>");
+let name3= "Agustina";
+let surname3= "Fernandez";
+document.write(`Mi nombre es ${name3} y mi apellido es ${surname3}`);
+document.write("<hr>");
+let price= 30;
+let iva= 0.16;
+document.write(`El precio es de ${price} con un iva de ${price*(1+iva)}`);
+
+/// creando una funcion de una variable
+const capitales = nombre =>`${nombre.charAt(0).toUpperCase()}${nombre.slice(1).toLowerCase()}`;//la primera letra las cabia en mayusucla y el resto a minuscula
+const alumno ={nombre:"Alfonso", apellido:"Diaz"};
+console.log(capitales("Pedro"));
+console.log(capitales(alumno.nombre), "" , capitales(alumno.apellido));

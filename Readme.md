@@ -332,3 +332,11 @@ var nuevaCadena= cadena.replace("amigos", "compañeros");
 var cadena3=cadena.replace(/bien/i, "joya"); -> bandera i // si hayy mayusculas o minsculas
 var cadena6= cadena4.replace(/playa/g, "campo"); -> bandera g // reemplazar mas de una ocurrencia
 ```
+- trim() = limpia los valores en blanco del formulario
+- concat() = concatenacion de las cadenas
+- split() = conversion de strings a arrays
+
+- los templates de cadenas o back-ticks -> son las comillas "diagonales" se pueden hacer expresiones
+```
+${``}
+```
