@@ -340,3 +340,33 @@ var cadena6= cadena4.replace(/playa/g, "campo"); -> bandera g // reemplazar mas 
 ```
 ${``}
 ```
+
+## Section7 Arreglos y Objetos
+### Colecciones de Arreglos y Objetos
+array = arreglos / vectores
+
+variable = una pequeña caja que queda en la memoria de la computadora
+```
+// variable asociada
+var array= new Array();
+var array2= [];
+
+// vamos a poblar un array
+array[0]="Lunes";
+array[1]="Martes";
+
+```
+
+### Poblar y Barrer un arreglo
+introducir datos en un objeto = "poblar"
+recorrer el arreglo = "barrer"
+
+recorrer = for / for ...in
+arreglar = push()
+
+```
+
+```
+
+
+
