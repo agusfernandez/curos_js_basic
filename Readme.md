@@ -365,8 +365,24 @@ recorrer = for / for ...in
 arreglar = push()
 
 ```
+ arreglos por referencia
+ months["enero"] = 4822; 
+
+ for (alumnos in months) {
+    document.write("Alumnos inscriptos en el mes de " + alumnos + " es de " + months[alumnos] + "<br>");
+}
 
 ```
 
+### Metodos para manipular arrays
 
+-shift -> extrae el primer elemento del array
+-pop -> elimina el ultimo elementos
+-unshift -> agrega el primer elmento del array
+-splice -> extraer los elementos a partir de un elemento n
+-join -> union de un array por medio de un separador
+```
+document.write("Los jugadores por orden alfabetico: "  + jugadores.sort() + "<br/> <br/>");
+jugadores.push("Lisa", "Agus");
 
+```
