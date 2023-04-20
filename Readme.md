@@ -386,3 +386,6 @@ document.write("Los jugadores por orden alfabetico: "  + jugadores.sort() + "<br
 jugadores.push("Lisa", "Agus");
 
 ```
+
+### Objetos (arrays)
+varibles agregadas // objeto q tenga arrays o funciones etc
