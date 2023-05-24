@@ -389,3 +389,87 @@ jugadores.push("Lisa", "Agus");
 
 ### Objetos (arrays)
 varibles agregadas // objeto q tenga arrays o funciones etc
+
+```
+
+var alumno = new Object();
+alumno.nombre = "Mario";
+alumno.apellido ="Marcos";
+alumno.edad = 44;
+alumno.empleado = "Profesor";
+alumno.califaciones = [4,2,5,8,6,4];
+alumno.direccion = {calle:"Rio Negro", num:55, ciudad: "Viedma"};
+
+document.write("Nombre del alumno: "+ alumno.nombre +"<br>"+ "Apellido del alumno: "+alumno.apellido  +"<br>"+ "Edad del alumno: "+ alumno.edad+ "El empleo del alumno: " + alumno.empleado + "Califaciones del alumno: " + alumno.califaciones + "La direccion del alumno es: " + alumno.direccion.calle + " " + alumno.direccion.num + " " + alumno.direccion.ciudad);
+
+```
+
+### Objeto Date
+
+newDate();
+getDate() -> traeme el dato // la info pp viene de la compu (por ejemplo que dia de hoy es )
+getDay() // te devuelve una "posicion"
+getHours()
+getMinutes()
+getMonth() // te devuelve una "posicion"
+getSecond()
+getTime()
+getTimeZoneoofset()
+getYear()
+
+
+setDate(valor) -> seteo el dato // toma el dato inicial de la computadoa y no del servidor
+setHours(valor)
+setMinutes(valor)
+setMonth(valor)
+setSeconds(valor)
+setTime(valor)
+setYear(valor)
+
+
+```
+
+let date = new Date();
+let today = date.getDay();
+
+
+```
+### Objeto Boolean
+
+convertir objetos no booleanos en booleanos
+
+Boolean()
+
+```
+
+let boolean2 = new Boolean(true)
+
+```
+
+### Objeto Math
+Tiene propiedades y metodos que representan constantes y funciones matematicas // constants qye se utilizan dentro de los calculos matematicos 
+
+propiedades del objeto Math
+
+E = constante de Euler o numero e 
+LN2 = logaritmo de 2
+LN10 = logaritmo de 10
+LOG2E = Logaritmo de e en base 2
+LOG10E = Logaritmo de e en base 10
+PI = Numero PI
+SQRT1_2 = Raiz cuadrada de 0.5
+SQRT2 = Raiz cuadrada de 2
+
+metodos como 
+
+round(n)
+rand0m(n)
+sqrt(n)
+ceil(n)
+etccc....
+
+```
+let numerorandom = Math.random();
+let nuemroredondo = Math.round();
+
+```
