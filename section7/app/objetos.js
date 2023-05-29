@@ -44,7 +44,7 @@ document.write('Boolean dato cuatro: ' + boolean4 +"<br>");
 document.write('Boolean dato quinto: ' + boolean5 +"<br>");
 document.write('Boolean dato sexto: ' + boolean6 +"<br><br><br>");
 
-// Objetc Math()
+// Object Math()
 
 // Elegir de manera random un alumno
 
@@ -62,6 +62,13 @@ document.write('Numero aleatorio: ' + nuemerorandom +"<br>");
 document.write('El alumno elegido es: ' + gente[nuemerorandom] +"<br>") ;
 
 
+// funcion eval()
 
+let num1= 5;
+let num2=10;
+document.write(eval("num1+num2") + '<br>');
 
-
+let num3 = 3;
+// agrego una cadena ed un if para que el eval lo evalue y lo resuelva
+let str= "if(num3 == 6){alert ('z is 42'); z=42;} else z=0;"
+document.write('z es ' ,eval(str) + '<br><br><br>');

@@ -473,3 +473,53 @@ let numerorandom = Math.random();
 let nuemroredondo = Math.round();
 
 ```
+
+### Funcion eval()
+
+Muchas guias de progamacion puden que las evitemos de usar, 
+toma una cadena que puede contener javascript y la evalua. Puede contener de todo y eso es peligroso  ya que pueden ingresar codigo malicioso
+
+### Funcion parseInt() y parseFloat()
+
+convierten cadenas en numeros (siempre hacer al conversion por las dudas)
+puede devolver el NAN (not a number) en caso de que no haya podido cambiarlo
+
+
+### ES6
+
+```
+antes
+
+obj={x:x ; y:y};
+
+ahora
+
+obj ={x,y}
+
+```
+### ES6 metodo assign
+
+metodo assign // se pueden asignar valores a traves de esta funcion
+
+```
+let object = {a:1};
+let object2 = {b:2};
+let object3 = {c:3};
+
+let object4 = Object.assign(object, object2, object3);
+```
+
+### ES6 map() / set()
+
+map: son una estructura de datos que almacenan pares de llaves(keys) y valor (valor)
+
+set: tienen la estructura de no aceptar duplicados // length === size (for)
+
+```
+let set = new Set();
+set.add('hola').add('como va').add('hola');
+console.log(set.size ===2); //length -> true
+console.log(set.has('agustina'));
+```
+
+### ES6 Array prototype includes
